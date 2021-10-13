@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  .ellipse {
+  width: 1123px;
+  max-width: 1123px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  animation: pulse-banner 2500ms ease-out infinite;
+  pointer-events: none
+}
+@keyframes pulse-banner {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(.6);
+    -moz-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(.6);
+    -ms-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(.6);
+    -o-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(.6);
+    transform: translateX(-50%) translateY(-40%) translateZ(0) scale(.6);
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.1);
+    -moz-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.1);
+    -ms-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.1);
+    -o-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.1);
+    transform: translateX(-50%) translateY(-40%) translateZ(0) scale(1.1);
+    opacity: 0
+  }
+}
+
+.contact-us-img-main-div {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contact-us-img-main-div .contact-us-icons {
+    position: relative;
+    z-index: 1;
+}
+.contact-us-img-main-div .ellipse-effects-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 230px;
+    transform: translate(-50%,-50%);
+    animation: pulse-banner 2500ms ease-out infinite;
+    pointer-events: none
+}
+.contact-us-box-main-div {
+    border: 1px solid #dddddd;
+    padding-bottom: 30px;
+}
+.contact-us-contain-div .common-para-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+  </style>
+</head>
+<body>
+
+
+<!-- <div class="container">
+  <img src="ellipse.png" class="img-fluid ellipse">
+</div> -->
+
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4"> 
+      <div class="contact-us-box-main-div">
+        <div class="contact-us-img-main-div text-center">
+          <img src="mail.png" class="img-fluid contact-us-icons">
+          <img src="ellipse.png" class="img-fluid ellipse-effects-img">
+        </div>
+        <div class="contact-us-contain-div">
+          <p class="common-para-text"><a class="contact-links" href="mailto:vjp@jenishfood.com">abc@.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
